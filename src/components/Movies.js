@@ -4,13 +4,8 @@ import { movies } from '../data';
 const Movies = () => {
 
   const renderMovies = () => (
-    movies.map(({title, time, genres}) => (
-      <Movie
-        title={title}
-        time={time}
-        genres={genres}
-      />
-    ))
+    movies.map((d) => <h1 key={d.title}></h1>{d.title}{d.time}{d.genres}{d.metascore};
+    })
   )
 
   return (
